@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name= "Automation Test suite" thread-count="1" parallel="tests" >
+	<test name= "Java leaning">
+	<parameter name = "browser" value = "chrome"/> 
+	<parameter name = "url" value = "https://shop.advanceautoparts.com/"/> 
+	 <classes>
+	   <class name ="com.tests.TestHomePage"> 
+	   <!-- <methods> 
+	   <include name ="method1"/>
+	    <include name = "method2" />
+	   </methods> -->
+	   </class>
+	</classes>
+	</test>
+	<!-- <test name = "Java learning fire fox">
+	  <parameter name = "browser" value = "firefox"/> 
+	  <parameter name = "url" value = "https://www.aetna.com"/>
+	   <classes>
+	  <class name = "com.rough.FindDoctor">
+	 </class>
+	</classes>
+	</test>
+	<test name= "Learning java on IE">
+		<parameter name ="browser" value = "IE"/>
+		<parameter name ="url" value = "https://www.aetna.com" />
+			<classes>
+				<class name = "com.rough.FindDoctor">
+				</class>
+		   </classes>
+	</test> -->
+</suite>

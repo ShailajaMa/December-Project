@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Automation Test suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Java leaning(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://shop.advanceautoparts.com/"/>
+    <classes>
+      <class name="com.tests.TestHomePage">
+        <methods>
+          <include name="lauchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="testClickOnSearchBar"/>
+        </methods>
+      </class> <!-- com.tests.TestHomePage -->
+    </classes>
+  </test> <!-- Java leaning(failed) -->
+</suite> <!-- Failed suite [Automation Test suite] -->
